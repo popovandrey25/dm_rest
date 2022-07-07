@@ -70,10 +70,10 @@ class GenreAdmin(admin.ModelAdmin):
     list_display = ("name", "url")
 
 
-#@admin.register(Rating)
-#class RatingAdmin(admin.ModelAdmin):
-#    """Рейтинг"""
-#    list_display = ("name", "ip")
+@admin.register(Rating)
+class RatingAdmin(admin.ModelAdmin):
+    """Рейтинг"""
+    list_display = ("star", "movie", "ip")
 
 
 admin.site.register(RatingStar)
